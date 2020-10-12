@@ -54,6 +54,7 @@ StarWars = (function() {
     this.start.bind("mouseenter mouseleave", $.proxy(function() {
       this.start.hide();
       this.audio.play();
+      this.audio.muted = false;
       this.el.append(this.animation);
     }, this));
     
